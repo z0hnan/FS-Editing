@@ -1,11 +1,6 @@
 @font-face {
-    font-family: 'Starlord';
-    src: url(/fonts/Starlord.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'blowbrush';
-    src: url(/fonts/blowbrush.otf) format('opentype');
+    font-family: 'Fertigo';
+    src: url(/fonts/FertigoRegular.otf) format('opentype');
 }
 
 html {
@@ -26,7 +21,7 @@ h1 {
     text-align: center;
     font-size: 100px;
     color: white;
-    font-family: 'simplifica';
+    font-family: 'Fertigo';
     text-shadow: 6px 6px 12px #000000;
     letter-spacing: 7px;
 }
