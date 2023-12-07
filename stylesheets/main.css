@@ -24,6 +24,14 @@ h1 {
     text-shadow: 6px 6px 12px #000000;
     letter-spacing: 7px;
 }
+h2 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: 'simplifica';
+  text-shadow: 6px 6px 12px #000000;
+  letter-spacing: 3px;
+}
 
 #active {
   background-color: rgba(255, 255, 255,0.7);
@@ -84,6 +92,8 @@ ul {
   }
   
   .grid-item {
+    display: flex;
+    flex-direction: column;
     border: 1px solid white;
     padding: 200px 20px;
     text-align: center;
@@ -92,32 +102,27 @@ ul {
     text-decoration: none;
     font-family: 'simplifica';
     font-size: 20px;
-    transition: filter 0.3s ease;
     overflow: hidden;
-
   }
 
-  .grid-item:hover {
-    color: grey;
-    filter: blur(5px);
-  }
-
-  .grid-item img {
-    transition: filter 0.3s ease; 
-  }
-  
-  .grid-item:hover img {
-    filter: blur(5px); 
-  }
-  
-  .grid-item a {
+  .grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-decoration: none;
-    font-family: 'simplifica';
-    font-size: 20px;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+  }
+  
+  .grid-img:hover {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    transform: scale(1.1);
+  }
+
+  .grid-text {
+    position: relative;
     z-index: 2;
   }
