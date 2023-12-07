@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
     const navbarItems = document.querySelectorAll('.navbar-item');
   
     function addPadding() {
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', function() {
   
     window.addEventListener('resize', addPadding);
     addPadding();
+
   });
