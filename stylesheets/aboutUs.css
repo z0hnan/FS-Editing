@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-image: url(/images/FSLogo1440pFaded.png); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/FSLogo1440pAdjusted.png); 
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center center; 
@@ -33,49 +33,53 @@ h1 {
   }
   
   ul {
-      list-style-type: none;
-      background-color: transparent;
-      margin: 0;
-      overflow: hidden;
-      position: fixed;
-      right: -1px;
-      top: 0;
-      width: 100%;
-      padding-top: 0px;
-      padding-bottom: 0px;
-    }
+    list-style-type: none;
+    background-color: transparent;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    right: -1px;
+    top: 0;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    z-index: 5;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
   
-    .navbar {
-      display: flex;
-      justify-content: center;
-    }
-    
-    .navbar-list {
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
-    }
-    
-    .navbar-item {
-      padding: 5px 0px;
-      color: white;
-      font-family: 'simplifica';
-      font-size: 30px;
-      text-decoration: none;
-      display: block;
-      margin-right: 0px;
-      margin-left: 0px;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  .navbar-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0; /* Add this line to remove margin */
+    padding: 0;
+  }
   
+  .navbar-item {
+    padding: 5px 0px;
+    color: white;
+    font-family: 'simplifica';
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
   
-    }
-    
-    .navbar-item:hover {
-      color: gray;
-    }
+  .navbar-item:hover {
+    color: gray;
+  }
+
 
     .rounded{
         border-radius: 25px;
