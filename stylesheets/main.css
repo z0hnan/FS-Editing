@@ -50,7 +50,7 @@ h1 {
   height: auto; /* Let the height adjust proportionally */
   object-fit: contain;
   position: absolute;
-  bottom: 10%; /* Adjust this value for vertical positioning */
+  bottom: 4%; /* Adjust this value for vertical positioning */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
