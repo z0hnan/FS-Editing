@@ -14,7 +14,16 @@ body {
     background-position: center center; 
     background-attachment: fixed;
     scroll-behavior: smooth;
+}
 
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 h1 {
@@ -41,7 +50,7 @@ h1 {
   height: auto; /* Let the height adjust proportionally */
   object-fit: contain;
   position: absolute;
-  bottom: 5%; /* Adjust this value for vertical positioning */
+  bottom: 10%; /* Adjust this value for vertical positioning */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -68,12 +77,13 @@ ul {
     background-color: transparent;
     margin: 0;
     overflow: hidden;
-    position: fixed;
+    position: relative;
     right: -1px;
     top: 0;
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
+    z-index: 5;
   }
 
   .navbar {
@@ -118,7 +128,7 @@ ul {
     display: flex;
     flex-direction: column;
     border: 1px solid white;
-    padding: 200px 20px;
+    padding: 0px 20px;
     text-align: center;
     position: relative;
     color: white;
@@ -126,6 +136,8 @@ ul {
     font-family: 'simplifica';
     font-size: 20px;
     overflow: hidden;
+    height: 400px;
+    justify-content: center; /* Center content vertically */
   }
 
   .grid-img {
@@ -139,13 +151,12 @@ ul {
     z-index: 1;
   }
 
-  .grid-img:hover {
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    transform: scale(1.1);
-  }
-
   .grid-text {
     position: relative;
     z-index: 2;
+    opacity: 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'simplifica';
+
   }
