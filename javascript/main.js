@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.onscroll = function() {
         if (window.scrollY > 0) {
-        document.body.style.background = "linear-gradient(rgba(0, 0, 0, " + window.scrollY/1080 + "), rgba(0, 0, 0, " + window.scrollY/1080 + ")), url(/images/FSLogo1440p.png) no-repeat center center fixed";
+        document.body.style.background = "linear-gradient(rgba(0, 0, 0, " + window.scrollY/1080 + "), rgba(0, 0, 0, " + window.scrollY/1080 + ")), url(/images/FSLogo1440pAdjusted.png) no-repeat center center fixed";
         document.body.style.backgroundSize = "cover";
         }
         else {
-        document.body.style.background = "linear-gradient(rgba(0, 0, 0, " + 0 + "), rgba(0, 0, 0, " + 0 + ")), url(/images/FSLogo1440p.png) no-repeat center center fixed";
+        document.body.style.background = "linear-gradient(rgba(0, 0, 0, " + 0 + "), rgba(0, 0, 0, " + 0 + ")), url(/images/FSLogo1440pAdjusted.png) no-repeat center center fixed";
         document.body.style.backgroundSize = "cover";
 
         }

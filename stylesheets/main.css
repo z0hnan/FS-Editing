@@ -8,22 +8,22 @@ html {
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/FSLogo1440p.png); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/FSLogo1440pAdjusted.png); 
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center center; 
     background-attachment: fixed;
     scroll-behavior: smooth;
+    margin-top: 0px;
 }
 
 .example::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 h1 {
@@ -95,6 +95,8 @@ ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    margin: 0; /* Add this line to remove margin */
+    padding: 0;
   }
   
   .navbar-item {
